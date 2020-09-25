@@ -358,6 +358,19 @@ print("Created icon.png")
 icon_2x=input_image.resize((114,114))
 icon_2x.save("icon@2x.png","PNG")
 print("Created icon@2x.png")
+
+
+
+os.chdir('..')
+os.mkdir('For Android')
+os.chdir('For Android')
+
+android=input_image.resize((512,512))
+android.save("icon.png")
+print("For android Created")
+
+
+
 a = input('Press a key to exit')
 if a:
     exit(0)
